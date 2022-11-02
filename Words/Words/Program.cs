@@ -70,22 +70,13 @@ internal class Program
                         if (checkWords(inputWord, parentWord))
                         {
                             if (!existWords(inputWord, usedWords))
-                            {
-                                gameOver = true;
-                                Console.WriteLine("Такое слово уже вводилось!\nВы проиграли");
-                            }
+                                gameOver = gameOverText("Такое слово уже вводилось!");
                         }
                         else
-                        {
-                            gameOver = true;
-                            Console.WriteLine("Такое слово нельзя составить из родительского слова!\nВы проиграли");
-                        }
+                            gameOver = gameOverText("Такое слово нельзя составить из родительского слова!");
                     }
                     else
-                    {
-                        gameOver = true;
-                        Console.WriteLine("Превышено время на ввод слова!\nВы проиграли");
-                    }
+                        gameOver = gameOverText("Превышено время ожидания!");
                 }
             }
         }
@@ -114,5 +105,11 @@ internal class Program
         }
         else
             return false;
+    }
+
+    public static bool gameOverText(string errorMessage)
+    {
+        Console.WriteLine($"\n{errorMessage}\nВы проиграли");
+        return true;
     }
 }
