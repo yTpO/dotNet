@@ -1,0 +1,37 @@
+E:\IBA\dot_Net\Words\Words\bin\Debug\net6.0\Words.exe
+E:\IBA\dot_Net\Words\Words\bin\Debug\net6.0\Words.deps.json
+E:\IBA\dot_Net\Words\Words\bin\Debug\net6.0\Words.runtimeconfig.json
+E:\IBA\dot_Net\Words\Words\bin\Debug\net6.0\Words.dll
+E:\IBA\dot_Net\Words\Words\bin\Debug\net6.0\Words.pdb
+E:\IBA\dot_Net\Words\Words\obj\Debug\net6.0\Words.csproj.AssemblyReference.cache
+E:\IBA\dot_Net\Words\Words\obj\Debug\net6.0\Words.GeneratedMSBuildEditorConfig.editorconfig
+E:\IBA\dot_Net\Words\Words\obj\Debug\net6.0\Words.AssemblyInfoInputs.cache
+E:\IBA\dot_Net\Words\Words\obj\Debug\net6.0\Words.AssemblyInfo.cs
+E:\IBA\dot_Net\Words\Words\obj\Debug\net6.0\Words.csproj.CoreCompileInputs.cache
+E:\IBA\dot_Net\Words\Words\obj\Debug\net6.0\Words.dll
+E:\IBA\dot_Net\Words\Words\obj\Debug\net6.0\refint\Words.dll
+E:\IBA\dot_Net\Words\Words\obj\Debug\net6.0\Words.pdb
+E:\IBA\dot_Net\Words\Words\obj\Debug\net6.0\Words.genruntimeconfig.cache
+E:\IBA\dot_Net\Words\Words\obj\Debug\net6.0\ref\Words.dll
+E:\IBA\dot_Net\2. Words\Words\bin\Debug\net6.0\Words.exe
+E:\IBA\dot_Net\2. Words\Words\bin\Debug\net6.0\Words.deps.json
+E:\IBA\dot_Net\2. Words\Words\bin\Debug\net6.0\Words.runtimeconfig.json
+E:\IBA\dot_Net\2. Words\Words\bin\Debug\net6.0\Words.dll
+E:\IBA\dot_Net\2. Words\Words\bin\Debug\net6.0\Words.pdb
+E:\IBA\dot_Net\2. Words\Words\bin\Debug\net6.0\System.Data.SqlClient.dll
+E:\IBA\dot_Net\2. Words\Words\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+E:\IBA\dot_Net\2. Words\Words\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+E:\IBA\dot_Net\2. Words\Words\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+E:\IBA\dot_Net\2. Words\Words\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\IBA\dot_Net\2. Words\Words\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\IBA\dot_Net\2. Words\Words\obj\Debug\net6.0\Words.csproj.AssemblyReference.cache
+E:\IBA\dot_Net\2. Words\Words\obj\Debug\net6.0\Words.GeneratedMSBuildEditorConfig.editorconfig
+E:\IBA\dot_Net\2. Words\Words\obj\Debug\net6.0\Words.AssemblyInfoInputs.cache
+E:\IBA\dot_Net\2. Words\Words\obj\Debug\net6.0\Words.AssemblyInfo.cs
+E:\IBA\dot_Net\2. Words\Words\obj\Debug\net6.0\Words.csproj.CoreCompileInputs.cache
+E:\IBA\dot_Net\2. Words\Words\obj\Debug\net6.0\Words.csproj.CopyComplete
+E:\IBA\dot_Net\2. Words\Words\obj\Debug\net6.0\Words.dll
+E:\IBA\dot_Net\2. Words\Words\obj\Debug\net6.0\refint\Words.dll
+E:\IBA\dot_Net\2. Words\Words\obj\Debug\net6.0\Words.pdb
+E:\IBA\dot_Net\2. Words\Words\obj\Debug\net6.0\Words.genruntimeconfig.cache
+E:\IBA\dot_Net\2. Words\Words\obj\Debug\net6.0\ref\Words.dll
