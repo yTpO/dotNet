@@ -1,14 +1,46 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Words
+﻿namespace Words
 {
     internal class Engine
     {
-        public static bool CheckWords(string newWord, string parentWord)
+        /// <summary>
+        /// Главный метод класса, запускающий логику игры
+        /// </summary>
+        /// <param name="parentWord">Исходное слово</param>
+        /// <param name="timeForReadline">Время на ход</param>
+        public static void Play(string parentWord, int timeForReadline)
+        {
+            bool gameOver = false;
+            var usedWords = new List<string>();
+
+            while (!gameOver)
+            {
+                DateTime t = DateTime.Now;
+
+                Console.Write("Введите слово: ");
+                string? inputWord = Console.ReadLine();
+
+                if ((DateTime.Now - t).TotalSeconds < timeForReadline)
+                {
+                    if (CheckWords(inputWord, parentWord))
+                    {
+                        if (!ExistWords(inputWord, usedWords))
+                            gameOver = GameOverText("Такое слово уже вводилось!");
+                    }
+                    else
+                        gameOver = GameOverText("Такое слово нельзя составить из родительского слова!");
+                }
+                else
+                    gameOver = GameOverText("Превышено время ожидания!");
+            }
+        }
+
+        /// <summary>
+        /// Проверка на корректность введённого слова 
+        /// </summary>
+        /// <param name="newWord">Введённое слово</param>
+        /// <param name="parentWord">Исходное слово</param>
+        /// <returns>true - введённое слово содержится в исходном, false в противоположном случае</returns>
+        private static bool CheckWords(string newWord, string parentWord)
         {
             var word2List = parentWord.ToList();
             foreach (char ch in newWord)
@@ -20,7 +52,13 @@ namespace Words
             return true;
         }
 
-        public static bool ExistWords(string newWord, List<string> usedWords)
+        /// <summary>
+        /// Проверка введённого слова на уникальность
+        /// </summary>
+        /// <param name="newWord">Введённое слово</param>
+        /// <param name="usedWords">Список уже использованных слов</param>
+        /// <returns>true - введённое слово уникально и добавленио в список образованных слов, false в противоположном случае</returns>
+        private static bool ExistWords(string newWord, List<string> usedWords)
         {
             if (usedWords.IndexOf(newWord) < 0)
             {
@@ -31,21 +69,16 @@ namespace Words
                 return false;
         }
 
-        public static bool GameOverText(string errorMessage)
+        /// <summary>
+        /// Отображение текста ошибки и уведомления о проигрыше
+        /// </summary>
+        /// <param name="errorMessage">Текст ошибки</param>
+        /// <returns>true - игра проиграна, false - в противоположном случае</returns>
+        private static bool GameOverText(string errorMessage)
         {
             Console.WriteLine($"\n{errorMessage}\nВы проиграли");
+            Console.ReadKey();
             return true;
-        }
-
-        public static bool PrintWord(string word)
-        {
-            if (word != "")
-            {
-                Console.Clear();
-                Console.WriteLine($"Вы выбрали слово '{word}'\n");
-            }
-
-            return (word != "");
         }
     }
 }
